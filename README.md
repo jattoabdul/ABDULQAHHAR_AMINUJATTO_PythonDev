@@ -35,14 +35,14 @@ $ pip install jatto_compare_version_strings
 ````
 from compare_version_strings.compare_version_strings import compare_versions, prepare_comparison_result
 
-comparison_result = compare_versions('1.0.0.2.9', '1.0.0.3.4')
+comparison_result = compare_versions('1.0.1', '1.0.3')
 
 # It will return:
 #     A positive number: If the first version is greater than the second  
 #     A negative number: If the first version is smaller than the second
 #     Zero: If the versions are equals
 
-formated_result = prepare_comparison_result('1.0.0.2.9', '1.0.0.3.4')
+formated_result = prepare_comparison_result('1.0.1', '1.0.3')
 
 # It will return:
 #     '{version1}' is equal to '{version2}': If the comparison returns 0
