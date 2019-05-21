@@ -15,7 +15,7 @@ def compare_versions(version1: str, version2: str) -> int:
 	for i in range(len(version1)):
 		if version1[i] != version2[i]:
 			return version1[i] - version2[i]
-		return 0
+	return 0
 
 
 def prepare_comparison_result(version1: str, version2: str) -> str:
@@ -37,5 +37,4 @@ def prepare_comparison_result(version1: str, version2: str) -> str:
 	elif answer > 0:
 		result = f"'{version1}' is greater than '{version2}'"
 
-	# return result
-	return print(result)
+	return result
