@@ -5,10 +5,51 @@
 
 #### My Solution
 
-usage:
+Get Started:
+
+- Clone this repository:
+```sh
+$ git@github.com:jattoabdul/compare_version_strings.git
+```
+- Change into the `compare_version_strings` directory:
+```sh
+$ cd compare_version_strings
+```
+- Install all dependencies:
+```sh
+$ pip install -r requirements.txt
+```
+Run Test:
+```sh
+$ pytest
+```
+
+# TODO: (Package into a Python Library)
+
+Run as Packaged Library:
+- Install:
+```sh
+$ pip install jatto_compare_version_strings
+```
+
+- Usage:
 
 ````
+from compare_version_strings.compare_version_strings import compare_versions, prepare_comparison_result
 
+result = compare_versions('1.0.0.2.9', '1.0.0.3.4')
+
+# It will return:
+#     A positive number: If the first version is greater than the second  
+#     A negative number: If the first version is smaller than the second
+#     Zero: If the versions are equals
+
+formated_result = prepare_comparison_result('1.0.0.2.9', '1.0.0.3.4')
+
+# It will return:
+#     '{version1}' is equal to '{version2}': If the comparison returns 0
+#     '{version1}' is smaller than '{version2}': If the comparison returns -1
+#     '{version1}' is greater than '{version2}': If the comparison returns 1
 ````
 
 #### LICENSE
