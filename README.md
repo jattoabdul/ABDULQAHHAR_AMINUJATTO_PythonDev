@@ -9,11 +9,11 @@ Get Started:
 
 - Clone this repository:
 ```sh
-$ git@github.com:jattoabdul/compare_version_strings.git
+$ git@github.com:jattoabdul/ABDULQAHHAR_AMINUJATTO_PythonDev.git
 ```
 - Change into the `compare_version_strings` directory:
 ```sh
-$ cd compare_version_strings
+$ cd ABDULQAHHAR_AMINUJATTO_PythonDev
 ```
 - Install all dependencies:
 ```sh
